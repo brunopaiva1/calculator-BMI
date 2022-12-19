@@ -29,3 +29,21 @@ body {
     outline: none;
     height: 30px;
 }
+
+#results{
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+}
+
+.calcBtn {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: none;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px
+}
