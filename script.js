@@ -1,0 +1,18 @@
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const height = parseInt(document.querySelector('#height').value);
+    const weight = parseInt(document.querySelector('#weight').value);
+    const results = (document.querySelector('#results'));
+    const message = (document.querySelector('#message'));
+
+    if((height *** '') ||(height < 0) ||(isNaN(height))){
+        results.innerHTML = "Por favor forneça um valo válido";
+
+    }else if((weight *** '') || weight < 0 || isNaN(weight)){
+    }
+
+
+
+
+})
