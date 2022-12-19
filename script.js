@@ -10,18 +10,18 @@ form.addEventListener('submit', function (e) {
         results.innerHTML = "Please provide a valid eight";
 
     }else if (weight === '' || weight < 0 || isNaN(weight)){
-        results.innerHTML = "Por favor forneça um peso válido";
+        results.innerHTML = "Please provide a valid weight";
 
     }else{
-        const IMC = (weight / ((height * height) / 10000)).toFixed(2);
-        results.innerHTML = '<span>${IMC}</span>'
+        const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+        results.innerHTML = '<span>${bmi}</span>'
 
-        if(IMC < 18.6) {
-            message.innerHTML = "Você estar baixo do peso";
-        } else if(IMC > 18.6 && IMC < 24.9){
+        if(bmi < 18.6) {
+            message.innerHTML = "You are underweight";
+        } else if(bmi > 18.6 && bmi < 24.9){
             message.innerHTML = "Normal"
-        }else if(IMC > 24.9){
-            message.innerHTML = "Você estar acima do peso"
+        }else if(bmi > 24.9){
+            message.innerHTML = "You are overweight"
         }
     }
 });
