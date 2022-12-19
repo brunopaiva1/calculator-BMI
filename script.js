@@ -9,18 +9,15 @@ form.addEventListener('submit', function (e) {
     const message = document.querySelector('#message');
 
     if ((height === '') || (height < 0) || (isNaN(height))) {
-        //NaN !== NaN
         results.innerHTML = "Please provide a valid height";
 
     } else if (weight === '' || weight < 0 || isNaN(weight)) {
         results.innerHTML = "Please provide a valid weight";
     } else {
-        // Calculate BMI
         const bmi = (weight / ((height * height) / 10000)).toFixed(2);
-        // Display the results
         results.innerHTML = `<span>${bmi}</span>`
 
-        // Display End Message
+        
         if (bmi < 18.6) {
             message.innerHTML = "You are underweight";
         } else if (bmi > 18.6 && bmi < 24.9) {
