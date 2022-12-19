@@ -47,3 +47,7 @@ body {
     cursor: pointer;
     font-size: 20px
 }
+
+#message {
+    text-align: center;
+}
