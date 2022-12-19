@@ -7,7 +7,7 @@ form.addEventListener('submit', function (e) {
     const message = (document.querySelector('#message'));
 
     if ((height === '') || (height < 0) || (isNaN(height))){
-        results.innerHTML = "Por favor forneça um valor válido";
+        results.innerHTML = "Please provide a valid eight";
 
     }else if (weight === '' || weight < 0 || isNaN(weight)){
         results.innerHTML = "Por favor forneça um peso válido";
