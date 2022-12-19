@@ -3,7 +3,7 @@ form.addEventListener('submit', function (e) {
 
     const height = parseInt(document.querySelector('#height').value);
     const weight = parseInt(document.querySelector('#weight').value);
-    const results = (document.querySelector('#results'));
+    const results = (document.querySelector( '#results'));
     const message = (document.querySelector('#message'));
 
     if ((height === '') || (height < 0) || (isNaN(height))){
@@ -14,7 +14,8 @@ form.addEventListener('submit', function (e) {
 
     }else{
         const bmi = (weight / ((height * height) / 10000)).toFixed(2);
-        results.innerHTML = '<span>${bmi}</span>'
+
+        results.innerHTML = '<span> ${bmi} </span>'
 
         if(bmi < 18.6) {
             message.innerHTML = "You are underweight";
